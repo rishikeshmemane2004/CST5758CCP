@@ -9,20 +9,8 @@ import com.cs.pages.HomePage;
 import com.cs.pages.LoginPage;
 import com.github.javafaker.Faker;
 
-public class HomeTest extends BaseTest {
- 
-	@FrameworkAnnotations(author = "Bahubali",category = "smoke")
-	@Test(description="Verifying Home page title")
-	public void verifyHomeTitleTest()
-	{
-		LoginPage loginPage = new LoginPage();
-		HomePage homePage = loginPage.enterLoginDetails("Admin", "admin123");
-		
-		String actPageTitle  = homePage.getPageTitle();
-		String expPageHeader = "OrangeHRM";
-		Assert.assertEquals(expPageHeader,actPageTitle, "Page title does not match !");
-	}
-	
+public class CustomerTest extends BaseTest{
+
 	@FrameworkAnnotations(author = {"Rajmata","Shivgami"},category = "regression")
 	@Test(description="Verifying Customer added")
 	public void verifyNewCustomerTest()
@@ -52,8 +40,6 @@ public class HomeTest extends BaseTest {
 		
 		// assertion for save record successfully
 	}
-	
-	
 	
 	
 	

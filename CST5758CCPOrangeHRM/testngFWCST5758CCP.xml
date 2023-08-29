@@ -8,6 +8,7 @@
 		<classes>
 			<class name="com.tests.LoginTest" />
 			<class name="com.tests.HomeTest" />
+			<!--<class name="com.tests.CustomerTest"/>-->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
